@@ -1,0 +1,10 @@
+form{
+    background-color: aqua;
+    padding: 20px;
+    margin: 30px;
+    border-width: 30px;
+}
+input{
+    font-style: italic;
+    background-color: red;
+}
