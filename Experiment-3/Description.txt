@@ -1,0 +1,24 @@
+First I made a HTML page and gave it the name Admin Dashboard.
+Then I made a part called root where I put colors for normal mode like white, lightgreen, purple.
+After that I made a rule that if I tick the dark mode box then colors change to black and dark grey.
+I did not use any JavaScript, only HTML and CSS, so it is simple.
+
+Then I Used HTML and body to take the whole screen so there is no empty space around.
+I gave the body the background color and text color from my root, so they change when dark mode is on.
+Then I made 4 big parts — header, nav, main, and footer — and gave all of them a black border so they are clearly visible.
+
+In the header I put green color and some padding so it has space.
+The nav is on the left side, I made it 200px wide and made it tall so it fills the screen height.
+The main part is on the right side, I gave it space from the left so it does not cover nav and looks neat.
+The footer is at the bottom with green color and text in center.
+
+Then I made a checkbox at the top right for dark mode, and if I click it, the colors change without reloading.
+The links in nav are purple so they look different from the rest of the text.
+I also made sure that in dark mode the text, background, and even the links look good and readable.
+
+At the end I put text in the main part saying “Welcome, Admin!” and a short paragraph,
+and I wrote © 2025 Admin Panel in the footer.
+Sometimes when I click dark mode, the text and background all change together,
+and it still covers the full screen, so it works in both modes.
+That’s how I made it first normal colors, then dark colors, then the layout,
+and finally I added the dark mode switch without any JavaScript, and it all works with just HTML and CSS.

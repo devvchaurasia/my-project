@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Admin Dashboard</title>
+<style>
+:root {
+  --bg-main: white;
+  --bg-header: lightgreen;
+  --bg-footer: lightgreen;
+  --bg-nav: whitesmoke;
+  --txt: black;
+}
+#dark-toggle:checked ~ .container {
+  --bg-main: black;
+  --bg-header: #333;
+  --bg-footer: #333;
+  --bg-nav: #444;
+  --txt: white;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+body {
+  background: var(--bg-main);
+  color: var(--txt);
+  font-family: Arial;
+}
+header, nav, main, footer {
+  border: 2px solid black;
+}
+header {
+  background: var(--bg-header);
+  padding: 10px;
+}
+nav {
+  background: var(--bg-nav);
+  width: 200px;
+  float: left;
+  padding: 10px;
+  height: calc(100% - 160px);
+}
+main {
+  margin-left: 200px;
+  padding: 10px;
+  min-height: calc(100% - 160px);
+  background: var(--bg-main);
+  color: var(--txt);
+}
+footer {
+  background: var(--bg-footer);
+  text-align: center;
+  height: 60px;
+  line-height: 50px;
+}
+a {
+  color: purple;
+}
+</style>
+</head>
+<body>
+
+<input type="checkbox" id="dark-toggle" style="position:absolute; right:10px; top:10px;">
+<label for="dark-toggle" style="position:absolute; right:60px; top:10px;">Dark Mode</label>
+
+<div class="container" style="height:100%;">
+<header>
+  <strong>Admin Dashboard</strong>
+</header>
+
+<nav>
+  <a href="#">Home</a><br>
+  <a href="#">Users</a><br>
+  <a href="#">Settings</a>
+</nav>
+
+<main>
+  <h2>Welcome, Admin!</h2>
+  <p>This is the main content area. Add charts, tables, or reports here.</p>
+</main>
+
+<footer>
+  © 2025 Admin Panel
+</footer>
+</div>
+
+</body>
+</html>

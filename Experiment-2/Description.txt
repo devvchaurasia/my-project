@@ -1,0 +1,13 @@
+First, I started with <!DOCTYPE html> to tell the browser I’m using HTML5. 
+Then I used <html> to begin the page and added a <head> section. 
+In it, I gave the page a title and added a <meta> tag so it works well on phones and desktops. 
+Then I used a <style> tag to write the CSS.
+I applied <box-sizing: border-box> to keep layout clean. 
+The body has no margin, a light gray background, and uses Arial font. 
+I created a <container> using Flexbox to center everything. 
+Inside it, I made a white box called <.card> with padding, round corners, a shadow, and a max width of 320px. 
+I added a <.balance> section to show the money in big green text. 
+Then I made a <.btn> class for both buttons with full width, padding, white text, no border, round corners, and a click effect. 
+I used <.deposit-btn> for green and <.withdraw-btn> for red. 
+Finally, I placed everything inside the container. 
+It shows a white card with $0 and two buttons in the center of the screen.
