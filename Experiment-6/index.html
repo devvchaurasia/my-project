@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Easy Draw</title>
+</head>
+<body>
+  <h2>SVG Drawing Tool</h2>
+
+  <select id="tool">
+    <option value="line">Line</option>
+    <option value="rect">Box</option>
+    <option value="free">Free Hand</option>
+  </select>
+
+  <svg id="board" width="500" height="300" style="border:2px solid black; background:lightgray"></svg>
+
+  <script>
+    let draw = false;
+    let startX, startY, shape;
+
+    let board = document.getElementById("board");
+    let tool = document.getElementById("tool");
+
+    board.addEventListener("mousedown", e => {
+      draw = true;
+      startX = e.offsetX;
+      startY = e.offsetY;
+
+      if (tool.value == "line") {
+        shape = document.createElementNS("http://www.w3.org/2000/svg","line");
+        shape.setAttribute("x1", startX);
+        shape.setAttribute("y1", startY);
+        shape.setAttribute("x2", startX);
+        shape.setAttribute("y2", startY);
+        shape.setAttribute("stroke","blue");
+        board.appendChild(shape);
+      }
+      if (tool.value == "rect") {
+        shape = document.createElementNS("http://www.w3.org/2000/svg","rect");
+        shape.setAttribute("x", startX);
+        shape.setAttribute("y", startY);
+        shape.setAttribute("width",0);
+        shape.setAttribute("height",0);
+        shape.setAttribute("stroke","red");
+        shape.setAttribute("fill","none");
+        board.appendChild(shape);
+      }
+      if (tool.value == "free") {
+        shape = document.createElementNS("http://www.w3.org/2000/svg","path");
+        shape.setAttribute("d",`M ${startX} ${startY}`);
+        shape.setAttribute("stroke","green");
+        shape.setAttribute("fill","none");
+        board.appendChild(shape);
+      }
+    });
+
+    board.addEventListener("mousemove", e => {
+      if(!draw) return;
+      if(tool.value=="line"){
+        shape.setAttribute("x2", e.offsetX);
+        shape.setAttribute("y2", e.offsetY);
+      }
+      if(tool.value=="rect"){
+        shape.setAttribute("width", e.offsetX-startX);
+        shape.setAttribute("height", e.offsetY-startY);
+      }
+      if(tool.value=="free"){
+        let d = shape.getAttribute("d");
+        shape.setAttribute("d", d+` L ${e.offsetX} ${e.offsetY}`);
+      }
+    });
+
+    board.addEventListener("mouseup", ()=> draw=false);
+  </script>
+</body>
+</html>
