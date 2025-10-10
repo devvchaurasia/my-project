@@ -1,0 +1,54 @@
+.people-container {
+    border: 1px solid #222;
+    padding: 16px;
+    margin: 20px auto;
+    max-width: 820px;
+    background: #fff;
+}
+
+h1 {
+    margin-top: 0;
+}
+
+.intro {
+    margin: 4px 0 16px 0;
+    font-size: 0.95em;
+    color: #444;
+}
+
+.people-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 16px 0;
+}
+
+.people-list li {
+    background: #fafafa;
+    border: 1px solid #e5e7eb;
+    border-radius: 6px;
+    padding: 10px 12px;
+    margin: 6px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+}
+
+.people-list button {
+    padding: 4px 10px;
+    font-size: 0.85em;
+    cursor: pointer;
+}
+
+.details-box {
+    border: 1px solid #e5e7eb;
+    background: #f8f8f8;
+    border-radius: 6px;
+    padding: 12px;
+    min-height: 60px;
+    white-space: pre-line;
+}
+
+.details-wrapper h2, .people-list-wrapper h2 {
+    margin-bottom: 8px;
+}

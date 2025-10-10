@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+    <head>  
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Experiment - 1</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="container">
+            <h1> Student Registration Form </h1>
+
+            <form action="/submit" method="post">
+                <label for="name">Name:</label> <br>
+                <input type="text" id="name" name="name" required pattern="[A-Za-z\s]{2,}" title="Please enter at least 2 letters.">
+                <br> <br>
+                <label for="email">Email:</label> <br>
+                <input type="email" id="email" name="email" required>
+                <br> <br>
+                <label for="age">Age:</label> <br>
+                <input type="number" id="age" name="age" required min="1" max="120" title="Please enter a valid age between 1 and 120.">
+                <br> <br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </body>
+</html>

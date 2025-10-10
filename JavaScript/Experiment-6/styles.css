@@ -1,0 +1,14 @@
+.drawing-container {
+    border: 1px solid #222;
+    padding: 12px;
+    margin: 20px auto;
+    max-width: 820px;
+    background: #fff;
+}
+
+#drawArea {
+    border: 1px solid #222;
+    background: #f8f8f8;
+    width: 100%;
+    display: block;
+}

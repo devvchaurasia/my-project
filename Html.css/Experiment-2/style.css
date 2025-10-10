@@ -1,0 +1,72 @@
+/* Universal selector - applies to all HTML elements */
+* {
+    margin: 0; /* removes spacing around elements */
+    padding: 0; /* removes inner spacing from elements */
+    background: white; /* makes everything have white background */
+    box-sizing: border-box; /* includes padding in total size calculations */
+}
+
+/* Body element - the main container for all visible content */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* sets clean modern font */
+    min-height: 100vh; /* makes body fill entire screen height */
+    display: flex; /* enables flexible layout system */
+    justify-content: center; /* centers content horizontally */
+    align-items: center; /* centers content vertically */
+    padding: 20px; /* adds space around edges */
+}
+
+/* Main container - the white card that holds our banking interface */
+.container {
+    background: white; /* makes container background white */
+    border-radius: 15px; /* creates rounded corners */
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1); /* adds shadow for depth */
+    padding: 40px; /* creates inner spacing */
+    max-width: 400px; /* limits maximum width */
+    width: 100%; /* uses all available width */
+    text-align: center; /* centers all text inside */
+}
+
+/* Amount display - shows the current account balance */
+#amount {
+    width: 100%; /* makes element span full width */
+    padding: 15px; /* adds space around the text */
+    font-size: 24px; /* makes text large and readable */
+    font-weight: bold; /* makes text thick and bold */
+    color: #333; /* makes text dark gray */
+    background-color: #ffffff; /* ensures background stays white */
+}
+
+/* Button container - wrapper that arranges deposit and withdraw buttons */
+.button-container {
+    display: flex; /* arranges buttons in a row */
+    gap: 15px; /* creates space between buttons */
+    justify-content: center; /* centers buttons horizontally */
+    align-items: center; /* aligns buttons vertically */
+    flex-wrap: wrap; /* allows buttons to wrap if needed */
+}
+
+/* General button styling - applies to both deposit and withdraw buttons */
+button {
+    flex: 1; /* makes buttons share available space */
+    padding: 15px 20px; /* creates comfortable click area */
+    font-size: 16px; /* sets readable text size */
+    font-weight: 600; /* makes text slightly bold */
+    border: none; /* removes default button border */
+    border-radius: 8px; /* creates rounded button corners */
+    cursor: pointer; /* shows hand cursor on hover */
+    transition: all 0.3s ease; /* creates smooth hover animations */
+    min-width: 120px; /* prevents buttons from being too small */
+}
+
+/* Deposit button - green button for adding money */
+#depositBtn {
+    background: #28a745; /* makes button background green */
+    color: white; /* makes button text white */
+}
+
+/* Withdraw button - red button for taking money out */
+#withdrawBtn {
+    background: #dc3545; /* makes button background red */
+    color: white; /* makes button text white */
+}

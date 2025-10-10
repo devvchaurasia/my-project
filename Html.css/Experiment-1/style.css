@@ -1,0 +1,35 @@
+body {
+    background-color: aqua;
+    color: black;
+    width: 400px;
+    height: 250px;
+    border: 5px solid rgb(47, 17, 182);
+    border-radius: 12px;
+    padding: 20px;
+    margin: 300px auto;
+}
+/*
+input[type="text"],
+input[type="email"],
+input[type="number"]
+*/
+
+input {
+    background-color: rgb(33, 177, 64);
+    color: white;
+    width: 90%;
+    border: 1px solid rgb(47, 17, 182);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+/* 
+body {
+    background-color: rgb(223, 30, 30);
+    color: black;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+    */
