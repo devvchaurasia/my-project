@@ -1,0 +1,12 @@
+### Experiment 3: The Job Tag Checker
+(Role-Based Access Control - RBAC)
+
+What my code does:
+Imagine the Secret Club now has different jobs: **Bosses (Admin)**, **Helpers (Moderator)**, and **Friends (User)**.
+1. When you get your special secret ticket (JWT) in the login, the code now **stamps your job title** right onto the ticket.
+2. I made three different Secret Rooms: The **Boss Room**, the **Helper Room**, and the **Friend Room**.
+3. When you try to enter a room, the code checks two things:
+    * Is your ticket real?
+    * **Is your job title allowed in this room?**
+4. If a Friend tries to go into the Boss Room, the code reads the job title on the ticket and yells: **"403 Forbidden! You don't have the right job tag!"**
+5. Only Bosses can get into the Boss Room. Bosses and Helpers can get into the Helper Room. Everyone can get into the Friend Room.

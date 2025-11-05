@@ -1,0 +1,11 @@
+### Experiment 2: The Super Secret Club Pass
+(Full-Stack JWT Authentication)
+
+What my code does:
+This is like a **Secret Club**. If you want to come back tomorrow, you need a special pass.
+1. I built two parts: a **Front Door** (my React app) and a **Secret Guard** (my Node.js server).
+2. When you type your name and secret word into the Front Door, the Front Door sends them to the Secret Guard.
+3. The Secret Guard checks a list. If you are on the list, the Guard doesn't just say "OK." It gives you a **special, secret ticket** called a **JWT**.
+4. The Front Door saves this special ticket in the browser's memory.
+5. Now, to see the **Secret Room** (the protected page), the Front Door has to show that **special ticket** to the Secret Guard every single time.
+6. The Secret Guard looks at the ticket to make sure it's real. If it's real, you get in! If you try to sneak in without a ticket, the Guard yells: **"401 Unauthorized!"**

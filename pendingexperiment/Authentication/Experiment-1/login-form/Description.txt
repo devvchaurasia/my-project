@@ -1,0 +1,9 @@
+### Experiment 1: The Basic Secret Keeper
+(Login Form with React State)
+
+What my code does:
+Imagine you have a secret diary. This code is like the lock on the diary.
+1. I made a simple page with two boxes: one for your **name** and one for your **secret word** (password).
+2. When you type, the computer **remembers** what you are typing right away. (This is called 'state'.)
+3. If you press the 'Go' button without typing anything, the code says: **"HEY! You forgot to type your secret!"**
+4. If you type both secrets, the code yells the name and secret to the computer's log, proving it **caught your secrets correctly**.
