@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Product Cards with React Components – Experiment 7
 
 A first step into React: rendering a small set of product cards using functional components, props, JSX, and declarative UI composition. This experiment shifts from imperative DOM/event handling (Experiments 4–6) to a component-driven mindset.
@@ -104,3 +105,17 @@ npm run dev    # Start dev server (Vite + HMR)
 - Establish a baseline React + Vite toolchain
 
 ---
+=======
+# React + Vite
+
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+
+Currently, two official plugins are available:
+
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+## Expanding the ESLint configuration
+
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+>>>>>>> source/main

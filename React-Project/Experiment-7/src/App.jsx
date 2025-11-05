@@ -2,6 +2,7 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+<<<<<<< HEAD
 import ProductCard from './ProductCard.jsx'
 
 const products = [
@@ -21,3 +22,15 @@ function App() {
 }
 
 export default App
+=======
+import ProductsList from './productcard.jsx'
+function App() {
+  const [count, setCount] = useState(0)
+
+  return (
+    <ProductsList />
+  )
+}
+
+export default App
+>>>>>>> source/main
